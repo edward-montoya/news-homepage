@@ -67,6 +67,9 @@ function close() {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    & a {
+        color: var(--vt-neutral-dark-gray);
+    }
   }
   &__close {
     align-self: flex-end;
