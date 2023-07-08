@@ -1,0 +1,24 @@
+@import './base.css';
+
+#app {
+  max-width: 1120px;
+  font-family: Inter;
+  font-weight: normal;
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 3px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  #app {
+    margin: 0 auto;
+    padding: 6rem 1rem;
+  }
+}
+
