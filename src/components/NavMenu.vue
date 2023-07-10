@@ -98,7 +98,6 @@ function close() {
       flex-direction: row-reverse;
       justify-items: center;
       align-items: center;
-      font-size: 1.3rem;
       & a {
         color: var(--vt-neutral-dark-gray);
         transition: all 400ms ease-in-out;
