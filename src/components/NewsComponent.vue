@@ -36,7 +36,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
         margin-top: 1rem;
     }
     &__title {
@@ -56,7 +56,7 @@
         }
         &--main {
             color: var(--vt-primary-soft-orange);
-            font-size: 1.4rem;
+            font-size: 2rem;
         }
     }
     &__description {
@@ -66,7 +66,7 @@
     }
     &__item {
         color: white;
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid var(--vt-neutral-gray);
         li:last-child > & {
             border-bottom: none;
         }

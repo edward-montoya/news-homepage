@@ -71,9 +71,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    &__image {
-      max-width: 10rem;
-    }
   }
 }
 </style>

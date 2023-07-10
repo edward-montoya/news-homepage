@@ -19,7 +19,7 @@ import TopTierComponent from './components/TopTierComponent.vue';
 @media screen and (min-width: 1024px) {
   main {
     display: grid;
-    grid-template-areas: "header header header header" "banner banner banner news" "top top top top";
+    grid-template-areas: "header header header header header" "banner banner banner news news" "top top top top top";
     column-gap: 2rem;
   }
   .header  {

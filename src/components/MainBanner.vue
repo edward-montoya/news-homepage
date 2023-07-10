@@ -47,7 +47,8 @@
   &__description {
     grid-area: description;
     color: var(--vt-neutral-dark-gray);
-    line-height: 2rem;
+    line-height: 1.4rem;
+    margin-bottom: 3rem;
   }
   &__button {
     grid-area: button;
@@ -68,9 +69,13 @@
 @media screen and (min-width: 1024px) {
   .banner {
     display: grid;
-    grid-template-areas: 'picture picture' 'picture picture' 'title description' 'title button';
+    column-gap: 2rem;
+    grid-template-areas: 'picture picture picture' 'picture picture picture' 'title description description' 'title button button';
     &__title {
-      font-size: 4.5rem;
+      font-size: 3rem;
+    }
+    &__description {
+        margin-bottom: 0;
     }
   }
 }

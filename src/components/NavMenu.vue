@@ -2,7 +2,7 @@
   <nav class="nav" :class="{ 'nav--visible': visible }">
     <div class="nav__container">
       <button @click="close" class="nav__close">
-        <img src="../assets/images/icon-menu-close.svg" />
+        <img src="../assets/images/icon-menu-close.svg" alt="" />
       </button>
       <ul class="nav__menu">
         <li><a href="/home" aria-label="Homepage">Home</a></li>
