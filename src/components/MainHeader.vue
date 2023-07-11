@@ -1,12 +1,12 @@
 <template>
   <header class="header">
     <NavMenu :visible="visible" @close="close" />
-    <article class="header__container">
+    <div class="header__container">
       <img class="header__image" src="../assets/images/logo.svg" alt="application logo" />
       <button @click="open" class="header__menu">
         <img src="../assets/images/icon-menu.svg" alt="" />
       </button>
-    </article>
+    </div>
   </header>
 </template>
 
