@@ -56,7 +56,7 @@
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     & a {
-        transition: all 400ms ease-in-out;
+        transition: all 200ms ease-in-out;
         &:hover, &:focus {
             background: black;
         }

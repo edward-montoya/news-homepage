@@ -1,25 +1,34 @@
 <template>
   <section class="top">
-    <article class="top__container">
-      <img class="top__image" src="../assets/images/image-retro-pcs.jpg" alt="Retro PCs image" />
-      <span class="top__numeration">01</span>
-      <h3 class="top__title"><a href="/posts/reviving-retro-pcs/346453">Reviving Retro PCs</a></h3>
-      <p class="top__description">What happens when old PCs are given modern upgrades?</p>
-    </article>
-    <article class="top__container">
-      <img class="top__image" src="../assets/images/image-top-laptops.jpg" alt="Futuristic laptop" />
-      <span class="top__numeration">02</span>
-      <h3 class="top__title">
-        <a href="/posts/top-10-laptos-2022/234232">Top 10 Laptops of 2022</a>
-      </h3>
-      <p class="top__description">Our best picks for various needs and budgets.</p>
-    </article>
-    <article class="top__container">
-      <img class="top__image" src="../assets/images/image-gaming-growth.jpg" alt="Gamming PC" />
-      <span class="top__numeration">03</span>
-      <h3 class="top__title"><a href="/posts/grow-gaming/32424">The Grownth of Gaming</a></h3>
-      <p class="top__description">How the pandemic has sparked fresh opportunities.</p>
-    </article>
+    <h2 class="sr-only">Top posts</h2>
+    <ol class="top__list">
+      <li class="top__container">
+        <img class="top__image" src="../assets/images/image-retro-pcs.jpg" alt="Retro PCs image" />
+        <span class="top__numeration">01</span>
+        <h3 class="top__title">
+          <a href="/posts/reviving-retro-pcs/346453">Reviving Retro PCs</a>
+        </h3>
+        <p class="top__description">What happens when old PCs are given modern upgrades?</p>
+      </li>
+      <li class="top__container">
+        <img
+          class="top__image"
+          src="../assets/images/image-top-laptops.jpg"
+          alt="Futuristic laptop"
+        />
+        <span class="top__numeration">02</span>
+        <h3 class="top__title">
+          <a href="/posts/top-10-laptos-2022/234232">Top 10 Laptops of 2022</a>
+        </h3>
+        <p class="top__description">Our best picks for various needs and budgets.</p>
+      </li>
+      <li class="top__container">
+        <img class="top__image" src="../assets/images/image-gaming-growth.jpg" alt="Gamming PC" />
+        <span class="top__numeration">03</span>
+        <h3 class="top__title"><a href="/posts/grow-gaming/32424">The Grownth of Gaming</a></h3>
+        <p class="top__description">How the pandemic has sparked fresh opportunities.</p>
+      </li>
+    </ol>
   </section>
 </template>
 
@@ -28,6 +37,10 @@
 <style lang="scss" scoped>
 .top {
   margin-top: 4rem;
+  &__list {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+  }
   &__container {
     display: grid;
     grid-template-areas:
@@ -51,8 +64,8 @@
     grid-area: title;
     font-weight: 700;
     & a {
-        color: black;
-        transition: all 400ms ease-in-out;
+      color: black;
+      transition: all 200ms ease-in-out;
       &:hover,
       &:focus {
         color: var(--vt-primary-soft-red);
@@ -68,9 +81,12 @@
 
 @media screen and (min-width: 1024px) {
   .top {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    &__list {
+      display: flex;
+    }
+    &__container {
+      margin-top: 0;
+    }
   }
 }
 </style>

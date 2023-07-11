@@ -80,3 +80,17 @@ table {
 button {
   all: unset;
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.attribution { font-size: 11px; text-align: left; margin-left: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }

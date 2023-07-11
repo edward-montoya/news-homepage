@@ -100,7 +100,7 @@ function close() {
       align-items: center;
       & a {
         color: var(--vt-neutral-dark-gray);
-        transition: all 400ms ease-in-out;
+        transition: all 200ms ease-in-out;
         &:hover, &:focus {
           color: var(--vt-primary-soft-red);
         }
